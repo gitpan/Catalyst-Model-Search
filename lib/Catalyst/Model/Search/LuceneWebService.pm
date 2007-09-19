@@ -6,8 +6,6 @@ use NEXT;
 use base qw/Catalyst::Model::Search/;
 use Net::LuceneWS;
 
-our $VERSION = '0.01';
-
 __PACKAGE__->mk_classdata( '_lucene' );
 
 sub new { 

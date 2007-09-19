@@ -47,6 +47,7 @@ sub query_data : Local {
     my ( $self, $c ) = @_;
     
     my $results = $lucene->query( $c->req->params->{q} );
+    return unless $results
     my @items = $results->get_items;
     my $output;
     foreach my $item ( @items ) {

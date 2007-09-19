@@ -1,7 +1,5 @@
 package Catalyst::Model::Search::Plucene::Simple;
 
-our $VERSION = '0.01';
-
 use strict;
 use warnings;
 

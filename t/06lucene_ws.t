@@ -9,10 +9,11 @@ use Test::More;
 use File::Path;
 
 BEGIN {
+    
     eval "use Net::LuceneWS";
     plan $@
-        ? ( skip_all => 'needs Net::LuceneWS for testing' )
-        : ( tests => 24 )
+        ? (  skip_all => 'needs Net::LuceneWS for testing' )
+        : ( $ENV{LOCAL_LUCENE_SERVER } ? ( tests => 24 ) : (skip_all => "Requires a local lucene server. set LOCAL_LUCENE_SERVER to force." ))
 }
 
 use Catalyst::Test 'TestApp';

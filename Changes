@@ -1,4 +1,10 @@
 Revision history for Perl extension Catalyst::Model::Search
 
-0.01    16. 2007-09-16 19:24:34
+
+0.02    2007-09-19 23:50:00
+        - Skip lucene-ws tests by default.
+        - Fix README
+        
+        
+0.01    2007-09-16 19:24:34
         - initial release
