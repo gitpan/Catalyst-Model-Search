@@ -4,6 +4,8 @@ use strict;
 use NEXT;
 use base qw/Catalyst::Base/;
 
+our $VERSION='0.03';
+
 sub new { 
     my ( $self, $c ) = @_;
 

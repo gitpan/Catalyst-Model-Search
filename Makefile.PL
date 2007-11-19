@@ -1,7 +1,7 @@
 use inc::Module::Install;
 
 name('Catalyst-Model-Search');
-all_from('lib/Catalyst/Model/Search/Plucene.pm');
+all_from('lib/Catalyst/Model/Search.pm');
 
 include('ExtUtils::AutoInstall');
 
